@@ -37,7 +37,7 @@ else
 */
 
 // Задача 21  Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
-
+/*
 double Theorem(double numX1, double numY1, double numX2, double numY2, double numX3, double numY3)
 {
     double catet1 = numX1 - numX2;
@@ -71,3 +71,24 @@ double y3= Convert.ToDouble(Console.ReadLine());
 
 double res = Theorem (x1,y1,x2,y2,x3,y3);
 Console.WriteLine($"Расстояние между точками: {res}");
+
+*/
+
+// Задача 23 Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N
+
+void Cube(int n)
+{
+    int number = 1;
+    while (number <= n)
+    {
+        Console.Write(Math.Pow(number, 3) + " ");
+        number++;
+    } 
+}
+Console.WriteLine("Введите положительное число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n<0)
+{
+    Console.WriteLine ("Число отрицательное!");
+}
+Cube(n);
